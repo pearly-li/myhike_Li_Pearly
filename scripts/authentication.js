@@ -33,3 +33,6 @@ var uiConfig = {
   // Privacy policy url.
   privacyPolicyUrl: "<your-privacy-policy-url>",
 };
+/* Render the FirerbaseUI Auth Interface: */
+// Start method will wait until the DOM is loaded //
+ui.start("#firebaseui-auth-container", uiConfig);
