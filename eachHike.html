@@ -74,9 +74,12 @@
     </nav>
     <!-- the body of your page goes here -->
     <div class="container">
-        <h1><span id="hikeName"> this hike</span></h1>
-        <img class="hike-img responsive" src="" />
-        <div id="details-go-here"></div>
+        <h1><span id="hikeName">this hike</span></h1>
+        <div class="position-relative">
+            <img class="hike-img responsive" src="" alt="Hike photo">
+            <button class="btn btn-primary position-absolute bottom-0 end-0 m-3"
+                onclick="saveHikeDocumentIDAndRedirect()">Write Review</button>
+        </div>
     </div>
     <!-- stuff -->
 
