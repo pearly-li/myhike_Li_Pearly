@@ -32,3 +32,8 @@ function populateUserInfo() {
 
 //call the function to run it
 populateUserInfo();
+
+function editUserInfo() {
+  //Enable the form fields
+  document.getElementById("personalInfoFields").disabled = false;
+}
