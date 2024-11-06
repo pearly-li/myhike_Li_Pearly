@@ -30,10 +30,30 @@ function populateUserInfo() {
   });
 }
 
-//call the function to run it
-populateUserInfo();
-
 function editUserInfo() {
   //Enable the form fields
   document.getElementById("personalInfoFields").disabled = false;
+}
+
+function saveUserInfo() {
+  // (a) get user values
+  let userName = document.getElementById("nameInput").value;
+  //get the value of the field with id="nameInput"
+  let userSchool = document.getElementById("schoolInput").value;
+  //get the value of the field with id="schoolInput"
+  let userCity = document.getElementById("cityInput").value;
+  //get the value of the field with id="cityInput"
+
+  //b) update user's document in Firestore
+  currentUser
+    .update({
+      name: userName,
+      school: userSchool,
+      city: userCity,
+    })
+    .then(() => {
+      console.log("Document successfully updated!");
+    });
+  //c) disable edit
+  document.getElementById("personalInfoFields").disabled = true;
 }
