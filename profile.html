@@ -65,9 +65,12 @@
                 </div>
             </fieldset>
             <div class="d-flex justify-content-end mt-5">
-                <button type="button" class="btn btn-secondary" onclick="edit UserInfo()">Edit</button>
+                <button type="button" class="btn btn-secondary" onclick="editUserInfo()">Edit</button>
+                <!-- event-listener that call the
+                function editUserInfo after clicking on the button. -->
                 <span style="width: 10px"></span>
-                <button type="button" class="btn btn-info">Save</button>
+                <button type="button" class="btn btn-info" onclick="saveUserInfo()">Save</button>
+                <!-- //event-listener that calls the function saveUserInfo after clicking on the button.-->
             </div>
         </form>
     </div>
